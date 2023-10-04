@@ -6,6 +6,6 @@ app.get("/", (_req, res) => {
   res.json({ response: "OK" });
 });
 
-app.listen(() => {
+app.listen(3000, () => {
   console.log("Server started");
 });
