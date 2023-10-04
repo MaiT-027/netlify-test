@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /home/ubuntu/aws-test
     destination: /home/ubuntu/build/
