@@ -6,6 +6,7 @@ on:
       - master
 env:
   AWS_DEFAULT_REGION: ap-northeast-2
+  AWS_EC2_METADATA_DISABLED: true
 
 jobs:
   deploy:
