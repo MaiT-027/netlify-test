@@ -3,3 +3,8 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/build/
+
+permissions:
+  - object: /home/ubuntu/build/
+    owner: 2450
+    group: users
