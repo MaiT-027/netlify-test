@@ -6,5 +6,5 @@ files:
 
 permissions:
   - object: /home/ubuntu/build/
-    owner: 2450
-    group: users
+    owner: ubuntu
+    group: ubuntu
