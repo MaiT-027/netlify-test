@@ -18,4 +18,6 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          ssh -o StrictHostKeyChecking=no -i env.SSH_PRIVATE_KEY ubuntu@52.79.227.4 "cd /home/ubuntu/build && npm install"
+          echo "$env.SSH_PRIVATE_KEY" >> $HOME/key.pem
+          chmod 400 $HOME/key.pem
+          ssh -o StrictHostKeyChecking=no -i $HOME/key.pem ubuntu@52.79.227.4 "cd /home/ubuntu/build && npm install"
