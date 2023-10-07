@@ -13,4 +13,5 @@ axios
   })
   .catch(function (error) {
     console.error("에러 발생:", error);
+    displayData({ result: "error" });
   });
